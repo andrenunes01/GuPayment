@@ -15,7 +15,7 @@ class WebhookController extends Controller
 
     public function __construct()
     {
-        $this->iuguSubscriptionModelColumn = getenv('IUGU_SUBSCRIPTION_MODEL_ID_COLUMN') ?: config('services.iugu.subscription_model_id_column', 'iugu__id');
+        $this->iuguSubscriptionModelColumn = getenv('IUGU_SUBSCRIPTION_MODEL_ID_COLUMN') ?: config('services.iugu.subscription_model_id_column', 'iugu_id');
     }
 
     /**
